@@ -15,27 +15,27 @@ import random
 #num = random.randint(1,3)
 #print(num)
 
-puit = str(input('请猜拳：'))
+puit = str(input('请猜拳，你出了：'))
 num = random.randint(1,3)
-'''
-if num == 1:
-    a ='石头'
-   print(f'电脑出的是{a}')
-elif num==2:
-    a = '剪子'
-   # print(f'电脑出的是{a}')
-else:
-    a = '布'
-    #print(f'电脑出的是{a}')
+
+
 #print(f'电脑出的是{num}')
-'''
+
+
+if num ==1:
+    num1 = '石头'
+elif num ==2:
+    num1 = '剪子'
+else:
+    num1 ='布'
+print(f'电脑出的是{num1}')
 
 if (puit == '石头' and num == 1)or(puit == '剪子' and num == 2)or(puit == '布' and num == 3):
-    print(f'你出的{puit},电脑出的{num},打平了')
+    print(f'你出的{puit},电脑出的{num1},打平了')
 elif (puit == '石头' and num == 2)or(puit == '剪子' and num == 3)or(puit == '布' and num == 1):
-    print(f'你出的{puit},电脑出的{num},你赢了')
+    print(f'你出的{puit},电脑出的{num1},你赢了')
 else:
-    print(f'你出的{puit},电脑出的{num},你输了')
+    print(f'你出的{puit},电脑出的{num1},你输了')
 
 
 
