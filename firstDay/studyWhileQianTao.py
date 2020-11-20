@@ -60,3 +60,41 @@ for i in range(1,n+1):
     for b in range(0,n-i+1):
         print('* ',end='')
     print('')
+
+print('打印等边三角形--------------------------------------')
+i=1
+a=0
+n=6
+for i in range(i,n+1):
+    for a in range(0,n-i):
+        print('  ',end='')
+    for a in range(0,2*i-1):
+        print('* ',end='')
+
+    print('')
+print('打印等腰三角形--------------------------------------')
+i=1
+a=0
+n=6
+for i in range(i,n+1):
+    for a in range(0,n-i):
+        print(' ',end='')
+    for a in range(0,2*i-1):
+        print('*',end='')
+
+    print('')
+
+print('while打印等腰三角形--------------------------------------')
+i=0
+n=9#n控制行数
+while i<=n:
+    j = 0
+    while  j<n-i:
+        print(' ',end='')
+        j+=1
+    j = 0
+    while j<i+1:
+        print('* ',end='')
+        j += 1
+    print()
+    i += 1
